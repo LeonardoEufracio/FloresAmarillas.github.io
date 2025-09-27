@@ -1,0 +1,433 @@
+/* 🌸 ESTILOS ROMÁNTICOS PARA MI AMOR 🌸 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #fffde7 0%, #fff9c4 50%, #ffecb3 100%);
+    min-height: 100vh;
+    overflow-x: hidden;
+    color: #5d4037;
+    line-height: 1.6;
+}
+
+.jardin-magico {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.flor-flotante {
+    position: absolute;
+    font-size: 2.8rem;
+    opacity: 0.8;
+    animation: flotar-magia 8s infinite ease-in-out;
+    transition: all 0.6s ease;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+}
+
+.flor-flotante:hover {
+    transform: scale(1.4) rotate(12deg);
+    opacity: 1;
+    text-shadow: 0 0 25px rgba(255, 235, 59, 0.9);
+}
+
+@keyframes flotar-magia {
+    0%, 100% { 
+        transform: translateY(0) rotate(0deg) scale(1);
+    }
+    33% { 
+        transform: translateY(-30px) rotate(5deg) scale(1.1);
+    }
+    66% { 
+        transform: translateY(20px) rotate(-5deg) scale(0.9);
+    }
+}
+
+.corazon-latido {
+    position: absolute;
+    font-size: 2.2rem;
+    color: #ff6b6b;
+    animation: latir-corazon 2s infinite, navegar-dulce 20s infinite linear;
+    text-shadow: 0 0 15px rgba(255, 107, 107, 0.6);
+}
+
+@keyframes latir-corazon {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.4); }
+}
+
+@keyframes navegar-dulce {
+    0% { transform: translateX(-120px); }
+    100% { transform: translateX(calc(100vw + 120px)); }
+}
+
+.contenedor-principal {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.encabezado-romantico {
+    text-align: center;
+    margin-bottom: 4rem;
+    animation: aparecer-suave 1.5s ease-out;
+}
+
+.titulo-principal {
+    font-size: 4.5rem;
+    background: linear-gradient(45deg, #f57f17, #ffeb3b, #fbc02d, #ffeb3b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 4px 4px 8px rgba(0,0,0,0.15);
+    margin: 1.5rem 0;
+    animation: resplandor-dorado 4s infinite alternate;
+}
+
+@keyframes resplandor-dorado {
+    from { text-shadow: 0 0 15px rgba(255, 193, 7, 0.6); }
+    to { text-shadow: 0 0 35px rgba(255, 193, 7, 0.9); }
+}
+
+.subtitulo-poetico {
+    font-size: 1.8rem;
+    color: #795548;
+    font-style: italic;
+    margin-top: 1rem;
+    opacity: 0.9;
+}
+
+.seccion-mensaje {
+    background: rgba(255, 255, 255, 0.92);
+    padding: 3.5rem;
+    border-radius: 30px;
+    margin: 3rem 0;
+    box-shadow: 0 20px 45px rgba(255, 193, 7, 0.25);
+    border: 3px solid transparent;
+    background-clip: padding-box;
+    animation: deslizar-arriba 1.2s ease-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.seccion-mensaje::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: linear-gradient(90deg, #ffeb3b, #fbc02d, #ffd54f, #ffeb3b);
+    animation: brillo-movil 4s infinite linear;
+}
+
+@keyframes brillo-movil {
+    0% { background-position: -300% 0; }
+    100% { background-position: 300% 0; }
+}
+
+.mensaje-amor {
+    font-size: 1.4rem;
+    line-height: 1.9;
+    margin-bottom: 2.5rem;
+    text-align: justify;
+}
+
+.poema-romantico {
+    font-style: italic;
+    color: #5d4037; /* CAMBIADO: Mejor contraste */
+    padding: 2.5rem;
+    background: linear-gradient(135deg, #fff9c4 0%, #ffeb3b 100%);
+    border-radius: 25px;
+    margin: 2.5rem 0;
+    text-align: center;
+    font-size: 1.3rem;
+    animation: palpitar-suave 5s infinite alternate;
+    border: 2px dashed #fbc02d;
+    font-weight: 500; /* Añadido para mejor legibilidad */
+}
+
+@keyframes palpitar-suave {
+    from { transform: scale(1); box-shadow: 0 10px 30px rgba(255, 193, 7, 0.2); }
+    to { transform: scale(1.02); box-shadow: 0 15px 40px rgba(255, 193, 7, 0.3); }
+}
+
+.galeria-floral {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    margin: 4rem 0;
+}
+
+.tarjeta-flor {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2.5rem;
+    border-radius: 25px;
+    text-align: center;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    animation: aparecer-flor 1s ease-out;
+    border: 2px solid transparent;
+    color: #5d4037; /* Aseguramos color oscuro */
+}
+
+.tarjeta-flor:hover {
+    transform: translateY(-12px) scale(1.06);
+    box-shadow: 0 25px 50px rgba(255, 193, 7, 0.35);
+    border-color: #ffeb3b;
+}
+
+/* MEJORAS DE CONTRASTE - AÑADIDO */
+.tarjeta-flor h3 {
+    color: #e65100; /* Naranja oscuro para mejor contraste */
+    margin-bottom: 1.2rem;
+    font-size: 1.6rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.tarjeta-flor p {
+    color: #5d4037; /* Marrón oscuro */
+    line-height: 1.7;
+    font-size: 1.15rem;
+    font-weight: 500;
+}
+
+@keyframes aparecer-flor {
+    from { opacity: 0; transform: translateY(40px) scale(0.9); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.emoji-flor {
+    font-size: 5rem;
+    margin-bottom: 1.5rem;
+    animation: bailar-flor 3s infinite ease-in-out;
+}
+
+@keyframes bailar-flor {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    25% { transform: translateY(-25px) rotate(5deg); }
+    50% { transform: translateY(0) rotate(0deg); }
+    75% { transform: translateY(-15px) rotate(-5deg); }
+}
+
+.boton-corazon {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ff5252 100%);
+    color: white;
+    border: none;
+    padding: 1.5rem 3rem;
+    font-size: 1.4rem;
+    border-radius: 60px;
+    cursor: pointer;
+    margin: 3rem 0;
+    transition: all 0.4s ease;
+    animation: latir-boton 2.5s infinite;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.boton-corazon:hover {
+    transform: scale(1.12);
+    box-shadow: 0 15px 35px rgba(255, 107, 107, 0.45);
+    letter-spacing: 2px;
+}
+
+@keyframes latir-boton {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+}
+
+.pie-pagina {
+    margin-top: 5rem;
+    color: #795548;
+    text-align: center;
+    animation: aparecer-desde-abajo 2s ease-out;
+}
+
+@keyframes aparecer-desde-abajo {
+    from { opacity: 0; transform: translateY(60px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.confetti-amor {
+    position: fixed;
+    width: 14px;
+    height: 14px;
+    background: linear-gradient(135deg, #ffeb3b, #ffd54f);
+    border-radius: 50%;
+    animation: caer-confetti 4s linear forwards;
+    z-index: 1000;
+}
+
+@keyframes caer-confetti {
+    to { 
+        transform: translateY(100vh) rotate(720deg) scale(0);
+        opacity: 0;
+    }
+}
+
+/* 📱 DISEÑO RESPONSIVE */
+@media (max-width: 768px) {
+    .titulo-principal { font-size: 3rem; }
+    .contenedor-principal { padding: 1.5rem; }
+    .seccion-mensaje { padding: 2rem; }
+    .galeria-floral { grid-template-columns: 1fr; }
+    .mensaje-amor { font-size: 1.2rem; }
+}
+
+/* 🌙 MODO NOCTURNO AUTOMÁTICO */
+@media (prefers-color-scheme: dark) {
+    body {
+        background: linear-gradient(135deg, #1a1200 0%, #332900 50%, #4d3d00 100%);
+        color: #ffecb3;
+    }
+    .seccion-mensaje {
+        background: rgba(40, 35, 0, 0.92);
+    }
+    .tarjeta-flor {
+        color: #ffecb3;
+        background: rgba(60, 50, 0, 0.9);
+    }
+    .tarjeta-flor h3 {
+        color: #ffd54f;
+    }
+    .tarjeta-flor p {
+        color: #ffecb3;
+    }
+    .poema-romantico {
+        color: #ffecb3;
+        background: linear-gradient(135deg, #4d3d00 0%, #665200 100%);
+    }
+}
+/* 🌸 GALERÍA DE IMÁGENES ROMÁNTICAS 🌸 */
+
+.galeria-recuerdos {
+    margin: 4rem 0;
+    padding: 2rem 0;
+}
+
+.galeria-recuerdos h2 {
+    text-align: center;
+    color: #f57f17;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+}
+
+.contenedor-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.tarjeta-imagen {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(255, 193, 7, 0.2);
+    transition: all 0.4s ease;
+    border: 3px solid transparent;
+}
+
+.tarjeta-imagen:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(255, 193, 7, 0.3);
+    border-color: #ffeb3b;
+}
+
+.imagen-romantica {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.tarjeta-imagen:hover .imagen-romantica {
+    transform: scale(1.1);
+}
+
+.leyenda-imagen {
+    padding: 1.5rem;
+    text-align: center;
+    background: linear-gradient(135deg, #fff9c4, #ffeb3b);
+    color: #5d4037;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+/* Efecto de polaroid para las imágenes */
+.tarjeta-imagen {
+    background: white;
+    padding: 15px 15px 0 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1), 0 6px 20px rgba(0,0,0,0.1);
+}
+
+/* Marco dorado para imágenes especiales */
+.imagen-especial {
+    border: 5px solid #ffeb3b;
+    border-radius: 10px;
+}
+
+/* Animación de aparición para imágenes */
+@keyframes aparecerImagen {
+    from {
+        opacity: 0;
+        transform: scale(0.8) rotate(-5deg);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+.tarjeta-imagen {
+    animation: aparecerImagen 0.8s ease-out;
+}
+
+/* Efecto de brillo al pasar el mouse */
+.imagen-romantica {
+    filter: brightness(0.9);
+    transition: all 0.3s ease;
+}
+
+.tarjeta-imagen:hover .imagen-romantica {
+    filter: brightness(1.1);
+    box-shadow: 0 0 20px rgba(255, 235, 59, 0.5);
+}
+/* Animación para el modal */
+@keyframes aparecerModal {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Efecto de carga para imágenes */
+.imagen-romantica {
+    background: linear-gradient(90deg, #fff9c4 25%, #ffeb3b 50%, #fff9c4 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+.imagen-romantica.loaded {
+    animation: none;
+    background: none;
+}

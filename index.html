@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Mi Amor - Jardín de Flores Amarillas 💛</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌼</text></svg>">
+</head>
+<body>
+    <!-- Jardín mágico de flores animadas -->
+    <div class="jardin-magico" id="jardinMagico"></div>
+
+    <div class="contenedor-principal">
+        <header class="encabezado-romantico">
+            <h1 class="titulo-principal">Para Mi Bella</h1>
+            <p class="subtitulo-poetico">Donde cada flor amarilla guarda un secreto de mi amor por ti</p>
+            <div style="font-size: 5rem; margin: 2.5rem 0; animation: bailar-flor 4s infinite;">
+                🌼💛🌻✨🌸
+            </div>
+        </header>
+
+        <section class="seccion-mensaje">
+            <div class="mensaje-amor">
+                <p>Mi querida <strong>rayo de sol</strong>,</p>
+                <p>Desde el momento en que entraste en mi vida, todo adquirió nuevos colores y significados.
+                     Las flores amarillas, que siempre me han parecido hermosas, ahora me recuerdan inevitablemente a ti: 
+                     a tu risa contagiosa, a tu calidez que ilumina cada rincón y a la alegría pura que personificas.</p>
+                
+                <div class="poema-romantico">
+                    <p>"El amarillo de los pétalos<br>
+                    me habla de tu sonrisa,<br>
+                    el verde de los tallos<br>
+                    de la esperanza que me das.<br>
+                    Cada flor es un susurro<br>
+                    de este amor que crece<br>
+                    como jardín en primavera."</p>
+                </div>
+
+                <p>He creado este jardín digital para ti, donde cada animación, cada efecto y cada detalle representa una 
+                    parte de lo que siento. Espero que al explorarlo, puedas sentir aunque sea una fracción de la felicidad 
+                    que tú me causes cada día.</p>
+                
+                <p>Con todo el amor de mi corazón,<br>
+                <strong>GHOST</strong></p>
+            </div>
+        </section>
+
+                <!-- Sección de Galería de Recuerdos -->
+        <section class="galeria-recuerdos">
+            <h2>📸 Nuestros Momentos Especiales</h2>
+            <div class="contenedor-galeria">
+                
+                <!-- Imagen 1: Foto de pareja -->
+                <div class="tarjeta-imagen">
+                    <img src="imagenes/paisajehermoso.jfif" alt="Nuestra foto juntos" class="imagen-romantica">
+                    <div class="leyenda-imagen">💛 Nuestro momento favorito</div>
+                </div>
+
+                <!-- Imagen 2: Flores -->
+                <div class="tarjeta-imagen">
+                    <img src="imagenes/floresamarillas.jfif" alt="Flores amarillas" class="imagen-romantica">
+                    <div class="leyenda-imagen">🌼 Las flores que me recuerdan a ti</div>
+                </div>
+
+                <!-- Imagen 3: Lugar especial -->
+                <div class="tarjeta-imagen">
+                    <img src="imagenes/lugarespecial.jfif" alt="Lugar especial" class="imagen-romantica">
+                    <div class="leyenda-imagen">✨ Donde todo comenzó</div>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2 style="text-align: center; color: #f57f17; margin: 3rem 0; font-size: 2.5rem;">
+                💛 Lo Que Representa Cada Flor Para Mí 💛
+            </h2>
+            <div class="galeria-floral">
+                <div class="tarjeta-flor" onclick="animarFlor(this)">
+                    <div class="emoji-flor">🌻</div>
+                    <h3>Girasol de Mi Alma</h3>
+                    <p>Como el girasol sigue al sol, yo sigo la luz de tu sonrisa. Eres mi orientación y mi energía vital.</p>
+                </div>
+                
+                <div class="tarjeta-flor" onclick="animarFlor(this)">
+                    <div class="emoji-flor">🌼</div>
+                    <h3>Margarita de Tu Pureza</h3>
+                    <p>Tu esencia pura y auténtica me recuerda a la sencilla belleza de las margaritas campestres.</p>
+                </div>
+                
+                <div class="tarjeta-flor" onclick="animarFlor(this)">
+                    <div class="emoji-flor">🌹</div>
+                    <h3>Rosa de Nuestro Amor</h3>
+                    <p>Cada pétalo representa un día más de este amor que florece y se fortalece con el tiempo.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion-mensaje">
+            <h2 style="text-align: center; color: #f57f17; margin-bottom: 2rem;">
+                🎁 Sorpresa Especial Para Ti
+            </h2>
+            <p style="text-align: center; font-size: 1.3rem; margin-bottom: 2rem;">
+                Presiona el botón del corazón para descubrir una sorpresa mágica...
+            </p>
+            
+            <div style="text-align: center;">
+                <button class="boton-corazon" onclick="mostrarSorpresa()">
+                    💕 Revelar Mi Sorpresa 💕
+                </button>
+            </div>
+
+            <div id="sorpresa" style="display: none; text-align: center; animation: aparecer-suave 1s;">
+                <h3 style="color: #ff6b6b; margin: 2rem 0;">💖 Te Amo Eternamente 💖</h3>
+                <p style="font-size: 2rem; margin: 1.5rem 0;">🌼 Tu amor + Mi amor = 💛</p>
+                <p>Prometo amarte en cada estación, cuidar de ti como el jardinero más dedicado y hacer de nuestra vida el jardín más hermoso.</p>
+                <div class="emoji-flor">💍</div>
+                <p style="margin-top: 1.5rem; font-style: italic;">
+                    "Porque contigo, hasta el invierno tiene flores"
+                </p>
+            </div>
+        </section>
+
+        <footer class="pie-pagina">
+            <p>🌼 Creado con amor infinito el 20 de Septiembre de 2025 🌼</p>
+            <p>Cada visita tuya hace florecer mi corazón</p>
+            <p id="contador-visitas">Este jardín ha sido visitado 1 vez por mi amor</p>
+            <div style="margin-top: 1rem; font-size: 2rem;">
+                💛 🌸 🍯 🌞 💛
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/magia.js"></script>
+</body>
+</html>
